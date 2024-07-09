@@ -28,7 +28,7 @@ mainEl.classList = "flex-ctr";
 //1. Select and cache the <nav id="top-menu"> element in a variable named topMenuEl.
 let topMenuEl = document.getElementById("top-menu");
 topMenuEl.style.height = "100%"
-//topMenuEl.style.backgroundColor = 
+topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList = "flex-around";
 
 
