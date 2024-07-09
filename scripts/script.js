@@ -7,7 +7,7 @@ let mainEl = document.querySelector('main');
 //Hint: Assign a string that uses the CSS var() function like this: 'var(--main-bg)'.
 
 //let root = document.querySelector('.root');
-mainEl.style.backgroundColor = " #4a4e4d";
+mainEl.style.backgroundColor = 'var(--main-bg)';
 
 //mainEl.style.backgroundColor = 'var(--main-bg)';
 
@@ -28,7 +28,7 @@ mainEl.classList = "flex-ctr";
 //1. Select and cache the <nav id="top-menu"> element in a variable named topMenuEl.
 let topMenuEl = document.getElementById("top-menu");
 topMenuEl.style.height = "100%"
-topMenuEl.style.backgroundColor = var(--main-bg);
+//topMenuEl.style.backgroundColor = 
 topMenuEl.classList = "flex-around";
 
 
