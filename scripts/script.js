@@ -1,4 +1,12 @@
 //import "../styles/style.css";
+//Menu data structure
+var menuLinks = [
+  { text: 'about', href: '/about' },
+  { text: 'catalog', href: '/catalog' },
+  { text: 'orders', href: '/orders' },
+  { text: 'account', href: '/account' },
+];
+
 //Select and cache the <main> element in a variable named mainEl.
 
 let mainEl = document.querySelector('main');
@@ -36,13 +44,22 @@ topMenuEl.classList = "flex-around";
 // Very often, you will be working with data provided by external sources in a variety of ways.
 //  For this project, copy the following data structure to the top of your index.js file; you will use it to create your menu buttons.
 
-var menuLinks = [
-    { text: 'about', href: '/about' },
-    { text: 'catalog', href: '/catalog' },
-    { text: 'orders', href: '/orders' },
-    { text: 'account', href: '/account' },
-  ];
 
-
-
+for (let a of menuLinks){
  
+  let headerLinks = document.createElement('a');
+
+  headerLinks.setAttribute('href', menuLinks[0].href);
+  headerLinks.textContent  = menuLinks[0].text;
+  topMenuEl.appendChild(headerLinks);
+  
+
+  
+}
+
+//new link element
+
+//const attri = document.createAttribute('href');
+ 
+// let ar = menuLinks[0].href
+// console.log(ar)
