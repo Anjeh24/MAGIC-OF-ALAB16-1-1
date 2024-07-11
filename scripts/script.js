@@ -45,17 +45,23 @@ topMenuEl.classList = "flex-around";
 //  For this project, copy the following data structure to the top of your index.js file; you will use it to create your menu buttons.
 
 
-for (let a of menuLinks){
+ for (let a of menuLinks){
  
   let headerLinks = document.createElement('a');
 
-  headerLinks.setAttribute('href', menuLinks[0].href);
-  headerLinks.textContent  = menuLinks[0].text;
-  topMenuEl.appendChild(headerLinks);
+   headerLinks.setAttribute('href', a.href);
+  headerLinks.textContent  = a.text;
+   topMenuEl.appendChild(headerLinks);
   
 
   
-}
+ }
+
+
+
+
+
+
 
 //new link element
 
